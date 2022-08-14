@@ -17,7 +17,7 @@
 
 <strong>System Design of popular application</strong>
   
-  - 🎥&nbsp;&nbsp;[Design Netflix](https://www.youtube.com/watch?v=-Sn48geZruk&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=5)
+  - 🎥&nbsp;&nbsp;[Design Netflix|YouTube|Hotstar](https://www.youtube.com/watch?v=-Sn48geZruk&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=5)
   - 🎥&nbsp;&nbsp;[Design Snake & Ladder Game](https://www.youtube.com/watch?v=VgtD8OF6Yuw&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=14&t=29s)
 
 <br>
@@ -31,7 +31,7 @@
 
 <br>
 
-<strong>Proformance Optimization</strong>
+<strong>Performance Optimization</strong>
 
   - 🎥&nbsp;&nbsp;[Network optimization techniques](https://www.youtube.com/watch?v=XSVkWiW-t4k&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=11)
   - 🎥&nbsp;&nbsp;[Assets optimization techniques](https://www.youtube.com/watch?v=9JDlZxR8gVw&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=12)
