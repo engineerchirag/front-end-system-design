@@ -27,7 +27,7 @@
   - 🎥&nbsp;&nbsp;[Design Autocomplete / Typeahead Suggestions](https://www.youtube.com/watch?v=IKRbWT6LqIY&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=10)
   - 🎥&nbsp;&nbsp;[Design Configurable UI / Dynamic UI](https://www.youtube.com/watch?v=6z7ZXb4ntbE&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=13)
   - 🎥&nbsp;&nbsp;[Design Codesanbox (Part-1)](https://www.youtube.com/watch?v=HnYduOVY470&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=6)
-  - 🎥&nbsp;&nbsp;[Design Codesanbox (Part-1)](https://www.youtube.com/watch?v=o5aoJlcS8Rc&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=7)
+  - 🎥&nbsp;&nbsp;[Design Codesanbox (Part-2)](https://www.youtube.com/watch?v=o5aoJlcS8Rc&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=7)
 
 <br>
 
