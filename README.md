@@ -35,6 +35,9 @@
 
   - 🎥&nbsp;&nbsp;[Network optimization techniques](https://www.youtube.com/watch?v=XSVkWiW-t4k&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=11)
   - 🎥&nbsp;&nbsp;[Assets optimization techniques](https://www.youtube.com/watch?v=9JDlZxR8gVw&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=12)
+  - 📗&nbsp;&nbsp;[MDN Performance](https://developer.mozilla.org/en-US/docs/Learn/Performance)
+  - 📗&nbsp;&nbsp;[Web Dev Performance](https://web.dev/learn/#performance)
+  - 📗&nbsp;&nbsp;[Google Dev - Performance](https://developers.google.com/web/fundamentals/performance/get-started)
 
 <br>
 
