@@ -1,0 +1,282 @@
+{
+  "info": {
+    "_postman_id": "1b9a6970-cfb3-45b5-8c85-ae3b680e4859",
+    "name": "Ecommerce System Example",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3784482"
+  },
+  "item": [
+    {
+      "name": "inventory-service",
+      "item": [
+        {
+          "name": "products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{api_gateway_host}}/products",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "products",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.collectionVariables.set(\"product_id\", jsonData[\"data\"]);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"MBP 2020\",\n    \"price\": 3000,\n    \"quantity\": 3\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_gateway_host}}/products",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "stocks",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"product_id\": \"{{product_id}}\",\n    \"quantity\": 10,\n    \"at_price\": 5000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_gateway_host}}/stocks",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "stocks"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "customer-service",
+      "item": [
+        {
+          "name": "customers",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.collectionVariables.set(\"customer_id\", jsonData[\"data\"]);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Izhari Ishak Aksa\",\n    \"email\": \"izharishaksa@yahoo.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_gateway_host}}/customers",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "customers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "customers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{api_gateway_host}}/customers",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "customers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "topups",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customer_id\": \"{{customer_id}}\",\n    \"amount\": 1000000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_gateway_host}}/top_up",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "top_up"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "order-service",
+      "item": [
+        {
+          "name": "orders",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customer_id\": \"{{customer_id}}\",\n    \"items\": [\n        {\n            \"product_id\": \"{{product_id}}\",\n            \"quantity\": 4\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_gateway_host}}/orders",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{api_gateway_host}}/orders",
+              "host": [
+                "{{api_gateway_host}}"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "inventory_service_host",
+      "value": "localhost:4001/api/v1",
+      "type": "string"
+    },
+    {
+      "key": "customer_service_host",
+      "value": "localhost:4002/api/v1",
+      "type": "string"
+    },
+    {
+      "key": "order_service_host",
+      "value": "localhost:4003/api/v1",
+      "type": "string"
+    },
+    {
+      "key": "product_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "customer_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "api_gateway_host",
+      "value": "localhost:1500/api/v1",
+      "type": "string"
+    }
+  ]
+}
